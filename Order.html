@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--navigation---------------------------------------->
+    <nav>
+        <div class="left">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="dairy.html">Dairy </a>
+                <a href="vegetable.html">Vegetable</a>
+                <a href="Cosmetics.html">Cosmetics</a>
+                <a href="Order.html">Order</a>
+                <a href="registration.html">Sign in</a>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#"><i class='bx bx-support'></i></a>
+            <a href="#" class="iconCart"><i class='bx bx-basket'></i></a>
+            <a href="registration.html"><i class='bx bx-user'></i></a>
+        </div>
+    </nav>
+
+
+<!--Fruits---------------------------------------------->
+
+        <div class="container">
+            <h1>Order Your Groceries</h1>
+    
+            <!-- Fruits Section -->
+            <div class="center_text">
+                <h2>Fruits <span>products</span></h2>
+            </div>    
+            <div class="product-section">
+                <div class="product-grid">
+                    <img src="order/friuts/apple.jpeg" alt="Apple">
+                    <strong>Apple</strong>
+                    <p class="product-description">Fresh, crisp apples.</p>
+                    <p class="price">£1.49 per kg</p>
+                    <input type="number" id="apple" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Apple" data-price="1.49" data-unit="kg">Add to Cart</button>
+                </div>
+                <div class="product-grid">
+                    <img src="order/friuts/banana2.jpeg" alt="Banana" class="product-image">
+                    <strong>Banana</strong>
+                    <p class="product-description">Sweet ripe bananas.</p>
+                    <p class="price">£0.90 per kg</p>
+                    <input type="number" id="banana" placeholder="Enter quantity (1 = 1Kg)"  min="0">
+                    <button class="add-to-cart" data-product="Banana" data-price="0.90" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/friuts/orange.jpeg" alt="Orange" class="product-image">
+                    <strong>Valencia Orange</strong>
+                    <p class="product-description">Juicy oranges.</p>
+                    <p class="price">£1.50 per kg</p>
+                    <input type="number" id="orange" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Orange" data-price="1.50" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/friuts/strawberries.jpeg" alt="Strawberries" class="product-image">
+                    <strong>Strawberries</strong>
+                    <p class="product-description">Fresh strawberries.</p>
+                    <p class="price">£2.99 per 400g</p>
+                    <input type="number" id="strawberries" placeholder="Enter quantity (1 = 400g)" min="0">
+                    <button class="add-to-cart" data-product="Strawberries" data-price="2.99" data-unit="400g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/friuts/grapes.jpeg" alt="Grapes" class="product-image">
+                    <strong>Grapes</strong>
+                    <p class="product-description">Sweet and juicy grapes.</p>
+                    <p class="price">£2.00 per 500g</p>
+                    <input type="number" id="grapes" placeholder="Enter quantity (1 = 500g)" min="0">
+                    <button class="add-to-cart" data-product="Grapes" data-price="2.00" data-unit="500g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/friuts/mango.jpeg" alt="Mango" class="product-image">
+                    <strong>Alphonso Mango</strong>
+                    <p class="product-description">Juicy and sweet mangoes.</p>
+                    <p class="price">£1.80 each</p>
+                    <input type="number" id="mango" placeholder="Enter quantity" min="0">
+                    <button class="add-to-cart" data-product="Mango" data-price="1.80" data-unit="each">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Vegetables Section -->
+            <div class="center_text">
+                <h2>Vegetable <span>products</span></h2>
+            </div>
+            
+            <div class="product-section">
+                <div class="product-grid">
+                    <img src="order/vegetables/carrots.jpeg" alt="Carrots" class="product-image">
+                    <strong>Organic Carrots</strong>
+                    <p class="product-description">Fresh organic carrots.</p>
+                    <p class="price">£1.00 per kg</p>
+                    <input type="number" id="carrots" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Carrots" data-price="1.00" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/vegetables/brocoly.jpeg" alt="Broccoli" class="product-image">
+                    <strong>Green Broccoli</strong>
+                    <p class="product-description">Fresh green broccoli.</p>
+                    <p class="price">£1.30 per kg</p>
+                    <input type="number" id="broccoli" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Broccoli" data-price="1.30" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/vegetables/potato.jpeg" alt="Potatoes" class="product-image">
+                    <strong>Potatoes</strong>
+                    <p class="product-description">Perfect for roasting.</p>
+                    <p class="price">£0.80 per kg</p>
+                    <input type="number" id="potatoes" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Potatoes" data-price="0.80" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/vegetables/spinch.jpeg" alt="Spinach" class="product-image">
+                    <strong>Baby Spinach</strong>
+                    <p class="product-description">Fresh baby spinach.</p>
+                    <p class="price">£1.50 per bag</p>
+                    <input type="number" id="spinach" placeholder="Enter quantity" min="0">
+                    <button class="add-to-cart" data-product="Spinach" data-price="1.50" data-unit="bag">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/vegetables/cherry.jpeg" alt="Tomatoes" class="product-image">
+                    <strong>Cherry Tomatoes</strong>
+                    <p class="product-description">Sweet cherry tomatoes.</p>
+                    <p class="price">£1.20 per pack</p>
+                    <input type="number" id="tomatoes" placeholder="Enter quantity" min="0">
+                    <button class="add-to-cart" data-product="Tomatoes" data-price="1.20" data-unit="pack">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/vegetables/bellpepr.jpeg" alt="Peppers" class="product-image">
+                    <strong>Bell Peppers</strong>
+                    <p class="product-description">Colorful and crunchy.</p>
+                    <p class="price">£1.00 per pack</p>
+                    <input type="number" id="peppers" placeholder="Enter quantity" min="0">
+                    <button class="add-to-cart" data-product="Peppers" data-price="1.00" data-unit="pack">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Dairy Produce Section -->
+
+            <div class="center_text">
+                <h2>Dairy <span>products</span></h2>
+            </div>
+            <div class="product-section">
+                <div class="product-grid">
+                    <img src="order/dairy/milk.avif">
+                    <strong>Whole Milk</strong>
+                    <p class="product-description">Fresh whole milk.</p>
+                    <p class="price">£0.95 per litre</p>
+                    <input type="number" id="milk" placeholder="Enter quantity (1 = 1L)" min="0">
+                    <button class="add-to-cart" data-product="Milk" data-price="0.95" data-unit="litre">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/dairy/cheddar.avif" alt="Cheddar Cheese" class="product-image">
+                    <strong>Mature Cheddar</strong>
+                    <p class="product-description">Rich and creamy cheddar.</p>
+                    <p class="price">£2.50 per 250g</p>
+                    <input type="number" id="cheddar" placeholder="Enter quantity (1 =250g)" min="0">
+                    <button class="add-to-cart" data-product="Cheddar" data-price="2.50" data-unit="250g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/dairy/butter.webp" alt="Butter" class="product-image">
+                    <strong>Salted Butter</strong>
+                    <p class="product-description">Creamy salted butter.</p>
+                    <p class="price">£1.80 per 250g</p>
+                    <input type="number" id="butter" placeholder="Enter quantity(1 =250g)" min="0">
+                    <button class="add-to-cart" data-product="Butter" data-price="1.80" data-unit="250g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/dairy/yogurt.jpeg" alt="Yogurt" class="product-image">
+                    <strong>Greek Yogurt</strong>
+                    <p class="product-description">Thick and creamy.</p>
+                    <p class="price">£2.00 per 500g</p>
+                    <input type="number" id="yogurt" placeholder="Enter quantity(1 =500g)" min="0">
+                    <button class="add-to-cart" data-product="Yogurt" data-price="2.00" data-unit="500g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/dairy/cream.jpeg" alt="Cream" class="product-image">
+                    <strong>Double Cream</strong>
+                    <p class="product-description">Rich double cream.</p>
+                    <p class="price">£1.50 per 300ml</p>
+                    <input type="number" id="cream" placeholder="Enter quantity (1 =300L)" min="0">
+                    <button class="add-to-cart" data-product="Cream" data-price="1.50" data-unit="300ml">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/dairy/eggs.jpeg" alt="Eggs" class="product-image">
+                    <strong> Eggs</strong>
+                    <p class="product-description">Large free-range eggs.</p>
+                    <p class="price">£1.70 per dozen</p>
+                    <input type="number" id="eggs" placeholder="Enter quantity " min="0">
+                    <button class="add-to-cart" data-product="Eggs" data-price="1.70" data-unit="dozen">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Meat and Seafood Section -->
+            <div class="center_text">
+                <h2>Meat and <span>Seafood</span></h2>
+            </div>
+            <div class="product-section">
+                <div class="product-grid">
+                    <img src="order/meat/breast.jpeg" alt="Chicken Breast" class="product-image">
+                    <strong>Chicken Breast Fillets</strong>
+                    <p class="product-description">Fresh chicken breast fillets.</p>
+                    <p class="price">£5.00 per kg</p>
+                    <input type="number" id="chicken" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Chicken" data-price="5.00" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/meat/salmon.jpeg" alt="Salmon Fillet" class="product-image">
+                    <strong>Salmon Fillet</strong>
+                    <p class="product-description">Fresh Scottish salmon.</p>
+                    <p class="price">£6.50 per 500g</p>
+                    <input type="number" id="salmon" placeholder="Enter quantity (1 =500g)" min="0">
+                    <button class="add-to-cart" data-product="Salmon" data-price="6.50" data-unit="500g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/meat/beef.jpeg" alt=" Mince" class="product-image">
+                    <strong>Beef Mince</strong>
+                    <p class="product-description">Lean beef mince.</p>
+                    <p class="price">£4.00 per 500g</p>
+                    <input type="number" id="beefMince" placeholder="Enter quantity (1 =500g)" min="0">
+                    <button class="add-to-cart" data-product="Beef Mince" data-price="4.00" data-unit="500g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/meat/bacon.webp" alt="Bacon Rashers" class="product-image">
+                    <strong>Bacon Rashers</strong>
+                    <p class="product-description">Smoked bacon rashers.</p>
+                    <p class="price">£2.50 per pack</p>
+                    <input type="number" id="bacon" placeholder="Enter quantity" min="0">
+                    <button class="add-to-cart" data-product="Bacon" data-price="2.50" data-unit="pack">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/meat/prawn.jpg" alt="King Prawns" class="product-image">
+                    <strong>King Prawns</strong>
+                    <p class="product-description">Large king prawns.</p>
+                    <p class="price">£7.00 per 400g</p>
+                    <input type="number" id="prawns" placeholder="Enter quantity (1 = 400g)" min="0">
+                    <button class="add-to-cart" data-product="King Prawns" data-price="7.00" data-unit="400g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/meat/lamb.webp" alt="Lamb Chops" class="product-image">
+                    <strong>Lamb Chops</strong>
+                    <p class="product-description">Tender lamb chops.</p>
+                    <p class="price">£8.00 per kg</p>
+                    <input type="number" id="lamb" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Lamb Chops" data-price="8.00" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+    
+            <!-- Baking and Cooking Ingredients Section -->
+            <div class="center_text">
+                <h2> Baking and <span>Cooking Ingredients</span></h2>
+            </div>
+            <div class="product-section">
+                <div class="product-grid">
+                    <img src="order/bread/flour.avif" alt="Plain Flour" class="product-image">
+                    <strong>Plain Flour</strong>
+                    <p class="product-description">Versatile plain flour.</p>
+                    <p class="price">£0.60 per 1kg</p>
+                    <input type="number" id="flour" placeholder="Enter quantity (1 = 1Kg)" min="0">
+                    <button class="add-to-cart" data-product="Flour" data-price="0.60" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/bread/sugar.jpeg" alt="Granulated Sugar" class="product-image">
+                    <strong>Granulated Sugar</strong>
+                    <p class="product-description">Everyday sugar.</p>
+                    <p class="price">£0.65 per 1kg</p>
+                    <input type="number" id="sugar" placeholder="Enter quantity (1 = 1Kg)"  min="0">
+                    <button class="add-to-cart" data-product="Sugar" data-price="0.65" data-unit="kg">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/bread/butter.jpeg" alt="Baking Butter" class="product-image">
+                    <strong>Baking Butter</strong>
+                    <p class="product-description">Perfect for baking.</p>
+                    <p class="price">£1.50 per 250g</p>
+                    <input type="number" id="bakingButter" placeholder="Enter quantity (1 =250g)" min="0">
+                    <button class="add-to-cart" data-product="Baking Butter" data-price="1.50" data-unit="250g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/bread/DryYeast.jpg" alt="Dry Yeast" class="product-image">
+                    <strong>Dry Yeast</strong>
+                    <p class="product-description">For perfect bread.</p>
+                    <p class="price">£0.90 per 100g</p>
+                    <input type="number" id="yeast" placeholder="Enter quantity (1 =100g)" min="0">
+                    <button class="add-to-cart" data-product="Yeast" data-price="0.90" data-unit="100g">Add to Cart</button>
+                </div>
+    
+                <div class="product-grid">
+                    <img src="order/bread/ExtrVirginOliveOil.jpeg" alt="Olive Oil" class="product-image">
+                    <strong>Extra Virgin Olive Oil</strong>
+                    <p class="product-description">Rich and flavorful.</p>
+                    <p class="price">£3.00 per litre</p>
+                    <input type="number" id="oliveOil" placeholder="Enter quantity (1 = 1L)" min="0">
+                    <button class="add-to-cart" data-product="Olive Oil" data-price="3.00" data-unit="litre">Add to Cart</button>
+                </div>
+                <div class="product-grid">
+                    <img src="order/bread/backingpowder.avif" alt="Baking Powder" class="product-image">
+                    <strong>Baking Powder</strong>
+                    <p class="product-description">For perfect rise.</p>
+                    <p class="price">£0.80 per 200g</p>
+                    <input type="number" id="bakingPowder" placeholder="Enter quantity (1 =200g)" min="0">
+                    <button class="add-to-cart" data-product="Baking-Powder" data-price="0.80" data-unit="200g">Add to Cart</button>
+                </div>
+            </div>
+    
+        </div>
+
+
+
+        <div class="section cart-section">
+            <h2>Cart</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="cart-total">Total</td>
+                        <td id="cartTotalPrice">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="actions">
+            <button id="buyNowButton">Buy Now</button>
+            <button id="saveToFavoritesButton">Add to Favourites</button>
+            <button id="applyFavoritesButton">Apply Favourites</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="close">×</div>
+        <h2>Your Cart</h2>
+        <div class="listCart"></div>
+        <div class="total">
+            <span>Total Quantity: <span class="totalQuantity">0</span></span>
+            <span>Total Price: <span class="totalPrice">£0</span></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+<!--Footer------------------------------------------------------->
+<footer>
+    <div class="columns">
+        <div class="col">
+            <h5>Site Links</h5>
+            <a href="#">Articles</a>
+            <a href="#">Podcasts</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h5>Other Pages</h5>
+            <a href="#">404 Page</a>
+            <a href="#">Login|Register</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col">
+            <h5>Collaboration</h5>
+            <a href="#">Work With Us</a>
+            <a href="#">Affiliate</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="col last">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ad incidunt deleniti eligendi, vel
+                quaerat a
+                doloremque, quo id maiores suscipit ex iste accusantium.</p>
+            <div class="social-links">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-dribbble'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-twitter'></i>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Onlinekade, All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
